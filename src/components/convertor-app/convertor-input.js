@@ -20,6 +20,8 @@ const ConvertorInput = ({ accountId, setAccountId, setConvertedId }) => {
     .filter(({ value }) => value !== -1)
     .map(({ text, value }) => ({ text, value: `${value}` }))
 
+  prefixOptions.unshift({ text: "Astar Network", value: "5" })
+
   const _onChangePrefix = e => {
     const value = e.target.value
     console.log(e.target.value)
